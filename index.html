@@ -31,20 +31,18 @@
 	<body>
 		<div id = "container">
 
-			<h1>Your Full Name</h1>
+			<h1>Whitney Henry</h1>
 			<h2>["Project 1", 10, "Array", "Variables"]</h2>
 			<script>
 				//Declare an array called messageArray with the elements listed above.
-
-				
+                var messageArray = ["Project 1", 10, "Array", "Variables"];
 				
 			</script>
 			<h3>How many elements are in the array above?</h3>
 			<h4>
 				<script>
 					//Print the number of elements in messageArray.
-
-					
+                    document.write(messageArray.length)	;
 					
 				</script>
 			</h4>
@@ -52,8 +50,7 @@
 			<h4>
 				<script>
 					//Print the first element of messageArray.
-
-					
+                    document.write(messageArray[0]);
 					
 				</script>
 			</h4>
@@ -61,8 +58,7 @@
 			<h4>
 				<script>
 					//Print the last element of messageArray.
-
-					
+                    document.write(messageArray[3]);
 					
 				</script>
 			</h4>
@@ -70,7 +66,7 @@
 			<h4>
 				<script>
 					//Print the elements in messageArray 
-
+                    document.write(messageArray);
 
 				</script>
 			</h4>
@@ -78,9 +74,8 @@
 			<h4>
 				<script>
 					//Sort the elements in messageArray and then print out the elements
-
-					
-					
+					messageArray.sort();
+                    document.write(messageArray);
 					
 				</script>
 			</h4>
@@ -88,8 +83,7 @@
 			<h4>
 				<script>
 					//Reverse the elements in messageArray and then print out the elements
-
-					
+                    messageArray.reverse(); document.write(messageArray)
 					
 				</script>
 			</h4>
@@ -97,16 +91,14 @@
 			<h2>[12, 18, 8, 4, 1, 6]</h2>
 				<script>
 					//Declare an array called numberArray with the values listed above.
-
-					
-					
+                    var numberArray = [12, 18, 8, 4, 1, 6]
+	
 				</script>
 			<h3>How many elements are in the array above?</h3>
 			<h4>
 				<script>
 					//Print the number of elements in numberArray.
-
-					
+					document.write(numberArray.length);
 					
 				</script>
 			</h4>
@@ -114,22 +106,19 @@
 			<h4>
 				<script>
 					//Change the second element of numberArray to 32.
+                    numberArray.splice (1, 1, 32)
 
+                    //Change the fourth element of numberArray to the product of the values in index 2 & 5.
+                    numberArray[3] = (numberArray[2] * numberArray[5])
 
-          //Change the fourth element of numberArray to the product of the values in index 2 & 5.
-
-
-          //Change the first element of the numberArray to the difference betwwen the values in index 1 & 3 
-
+                    //Change the first element of the numberArray to the difference between the values in index 1 & 3 
+                    numberArray[0] = (numberArray[1] - numberArray[3])
 
 					//Change the last element of numberArray to 9.
-	
-	
+                    numberArray.splice (5, 5, 9)
 	
 					//print the elements of numberArray.
-	
-	
-	
+                    document.write(numberArray);
 	
 				</script>
 			</h4>
